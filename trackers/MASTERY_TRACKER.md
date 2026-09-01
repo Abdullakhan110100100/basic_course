@@ -14,12 +14,13 @@ Tracks: **[SDE-2]** backend/distributed · **[AI]** AI-engineering · **[Craft]*
 | `None` sentinel pattern | 1 | No | 3 | 2026-08-27 | Reproduced unaided; W004 resolved |
 | Iterators / generators | 1 | Yes | 3 | 2026-08-27 | Built iterator class + generator fn; explained memory savings correctly |
 | Decorators / context managers | 1 | Yes | 3 | 2026-08-27 | Built `@log_call`, `@retry(times=N)`, `SuppressError` class, `@contextmanager` timer; caught `try/finally` gap |
-| Typing / protocols / ABCs | 1 | Yes | — | — | |
-| GIL | 1 | Yes | — | — | |
-| Threads vs processes vs asyncio | 1 | Yes | — | — | |
-| Event loop / coroutines / tasks / cancellation | 1 | Yes | — | — | |
-| CPU-bound vs I/O-bound | 1 | Yes | — | — | |
-| Race conditions / locks / deadlocks | 1 | Yes | — | — | |
+| Typing / protocols / ABCs | 1 | Yes | 3 | 2026-08-28 | Wrote Protocol-based filter; defended Protocol vs ABC; TypeVar syntax corrected; Optional=Union[X,None] confirmed; Any dangers explained |
+| Exceptions (hierarchy, custom, chaining, finally) | 1 | Yes | 3 | 2026-08-31 | Built LedgerError hierarchy; fixed check order bug; caught f-string missing self; explained silent swallow danger; exception chaining understood |
+| GIL | 1 | Yes | 3 | 2026-09-01 | Understands GIL protects CPython refcounting not app logic; GIL releases on timer + I/O; locks still needed; needed hints on why GIL releases |
+| Threads vs processes vs asyncio | 1 | Yes | 3 | 2026-09-01 | CPU-bound→multiprocessing, I/O-bound→threading correct; asyncio covered in Week 3 |
+| CPU-bound vs I/O-bound | 1 | Yes | 3 | 2026-09-01 | Applied correctly to image resizing vs URL fetching |
+| Race conditions / locks / deadlocks | 1 | Yes | 3 | 2026-09-01 | Reproduced race (lost update ~100 vs 1000); fixed with lock; reproduced + fixed deadlock; lock ordering rule understood |
+| Event loop / coroutines / tasks / cancellation | 1 | Yes | — | — | Week 3 |
 | Bounded concurrency / semaphores | 1 | Yes | — | — | |
 | DNS / TCP / HTTP lifecycle / keep-alive | 1 | Yes | — | — | |
 | Connection pools | 1 | Yes | — | — | |

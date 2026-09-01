@@ -6,12 +6,12 @@
 
 ## Continuity header
 - **Phase:** 1 — SDE-2 Core Foundations
-- **Week:** 1 → transitioning to Week 2
-- **Lesson:** 1 — **COMPLETE** (object model, mutability, aliasing, mutable defaults, shallow/deep copy, iterators, generators, context managers, decorators incl. parametrized)
-- **Project:** LedgerFlow — milestone **M0** (repo scaffold + `/accounts` API), not started; begin this week
-- **Current milestone:** start Week 2 (typing, protocols, exceptions, concurrency I) + kick off LedgerFlow M0 scaffold
-- **Revision due:** W001 ✓, W002 ✓, W004 ✓ (all passed unaided 2026-08-27); W003 — regression caught and self-corrected, re-queue in ~3 days (due ~2026-08-30)
-- **DSA focus:** Weeks 1–2 = Arrays & Hashing (not started — must begin)
+- **Week:** 2 COMPLETE → entering Week 3
+- **Lessons complete:** Lesson 1 (Python object model) ✓, Week 2: Typing ✓, Exceptions ✓, Concurrency I ✓
+- **Project:** LedgerFlow — milestone **M0** NOT STARTED — **CRITICAL, must begin next session**
+- **Current milestone:** LedgerFlow M0 scaffold (repo + tooling gates + FastAPI skeleton + `POST/GET /accounts`)
+- **Revision due:** W003 (shallow vs deep copy) — overdue; surface as ambush next session. DSA re-solve due 2026-09-08 (Problem 5 only)
+- **DSA focus:** Arrays & Hashing → Developing→Solid (5 problems done, re-solve complete 2026-09-01)
 
 ## What changed in the redesign (2026-08-24)
 Replaced the broad 6-role / 6-project / 28-week course with a **focused 2-role / 3-project / 24-week** program (SDE-2 Backend + AI Engineer). Old files archived in `../archive/2026-08-24_broad-28week-course/`. **Carried forward:** Python object-model + mutability mastery (Level 3), weaknesses W001–W004, their revision schedule. New projects: **LedgerFlow** (Ph 1–3), **SearchLab** (Ph 4), **RepoPilot** (Ph 5). See `../instructions.md` §A for the three amendments (craft track, two-track expectation, LedgerFlow milestones).
@@ -19,7 +19,7 @@ Replaced the broad 6-role / 6-project / 28-week course with a **focused 2-role /
 ## Where we are in the lesson
 Lesson 1 **complete** (2026-08-27). All topics covered: object model, mutability, aliasing, mutable defaults, `is None`, shallow/deep copy, iterator protocol, generators, context managers (`__enter__`/`__exit__`, `@contextmanager`, `try/finally`), decorators and parametrized decorators with `@wraps`.
 
-**Next action when resuming:** Week 2 — Typing, protocols, exceptions, packaging; then Concurrency I (processes, threads, GIL, race conditions, locks). Also: **start LedgerFlow M0** (repo scaffold + tooling gates + FastAPI skeleton). DSA Arrays & Hashing must begin.
+**Next action when resuming:** **START LEDGERFLOW M0** — repo scaffold, tooling gates (ruff/mypy/pre-commit), FastAPI skeleton, `POST/GET /accounts`. This is the ONLY priority next session. After M0 is scaffolded, move to Week 3 concepts (asyncio). DSA re-solve next due 2026-09-08 (Product of Array Except Self only).
 
 **Process change (2026-08-27):** Primer files written to `course/notes/week_N/lesson_N_title/` before each new topic; grilling happens after reading. Retrieval-first still applies for revision of old material.
 
