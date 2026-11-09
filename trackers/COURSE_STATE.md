@@ -2,15 +2,15 @@
 
 > Read this FIRST every session. Update it LAST every session. If lost, this is how we resume without inventing progress.
 
-**Last updated:** 2026-08-24 (Redesign → focused SDE-2 Backend + AI Engineer program)
+**Last updated:** 2026-09-03
 
 ## Continuity header
 - **Phase:** 1 — SDE-2 Core Foundations
-- **Week:** 2 COMPLETE → entering Week 3
+- **Week:** 3 (in progress)
 - **Lessons complete:** Lesson 1 (Python object model) ✓, Week 2: Typing ✓, Exceptions ✓, Concurrency I ✓
-- **Project:** LedgerFlow — milestone **M0** NOT STARTED — **CRITICAL, must begin next session**
-- **Current milestone:** LedgerFlow M0 scaffold (repo + tooling gates + FastAPI skeleton + `POST/GET /accounts`)
-- **Revision due:** W003 (shallow vs deep copy) — overdue; surface as ambush next session. DSA re-solve due 2026-09-08 (Problem 5 only)
+- **Project:** LedgerFlow — milestone **M0 IN PROGRESS**
+- **Current milestone:** LedgerFlow M0 — scaffold done, `src/core/` done, `src/accounts/models.py` done. Next: `schemas.py` → `router.py` → `service.py` → `main.py` → tests
+- **Revision due:** W003 (shallow vs deep copy) — ambushed and answered correctly this session ✓. DSA re-solve due 2026-09-08 (Problem 5 only)
 - **DSA focus:** Arrays & Hashing → Developing→Solid (5 problems done, re-solve complete 2026-09-01)
 
 ## What changed in the redesign (2026-08-24)
@@ -19,7 +19,7 @@ Replaced the broad 6-role / 6-project / 28-week course with a **focused 2-role /
 ## Where we are in the lesson
 Lesson 1 **complete** (2026-08-27). All topics covered: object model, mutability, aliasing, mutable defaults, `is None`, shallow/deep copy, iterator protocol, generators, context managers (`__enter__`/`__exit__`, `@contextmanager`, `try/finally`), decorators and parametrized decorators with `@wraps`.
 
-**Next action when resuming:** **START LEDGERFLOW M0** — repo scaffold, tooling gates (ruff/mypy/pre-commit), FastAPI skeleton, `POST/GET /accounts`. This is the ONLY priority next session. After M0 is scaffolded, move to Week 3 concepts (asyncio). DSA re-solve next due 2026-09-08 (Product of Array Except Self only).
+**Next action when resuming:** Continue LedgerFlow M0 — write `src/accounts/schemas.py` (`AccountCreate` + `AccountResponse` Pydantic models), then `router.py`, `service.py`, `main.py`, and integration tests in `tests/accounts/test_router.py`. After M0 is complete, move to Week 3 concepts (asyncio). DSA re-solve next due 2026-09-08 (Product of Array Except Self only).
 
 **Process change (2026-08-27):** Primer files written to `course/notes/week_N/lesson_N_title/` before each new topic; grilling happens after reading. Retrieval-first still applies for revision of old material.
 
